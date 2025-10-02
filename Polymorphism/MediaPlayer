@@ -1,0 +1,6 @@
+package assignment;
+
+interface MediaPlayer {
+    void playAudio();
+    void playVideo();
+}
