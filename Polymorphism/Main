@@ -1,0 +1,40 @@
+package assignment;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Sample Output 1");
+        System.out.println("Action: Invoking playAudio() and playVideo() methods for MP3Player created with MP3Player().");
+        System.out.println("Output:");
+        MP3Player mp3 = new MP3Player();
+        mp3.playAudio();
+        mp3.playVideo();
+        
+        System.out.println();
+        
+        System.out.println("Sample Output 2");
+        System.out.println("Action: Invoking playAudio() and playVideo() methods for MP4Player created with MP4Player().");
+        System.out.println("Output:");
+        MP4Player mp4 = new MP4Player();
+        mp4.playAudio();
+        mp4.playVideo();
+        
+        System.out.println();
+        
+        System.out.println("Sample Output 3");
+        System.out.println("Action: Invoking playAudio() and playVideo() methods for Device created with Device(MP3Player) and Device(MP4Player).");
+        System.out.println("Output:");
+        Device deviceMP3 = new Device(new MP3Player());
+        deviceMP3.playAudio();
+        deviceMP3.playVideo();
+        
+        Device deviceMP4 = new Device(new MP4Player());
+        deviceMP4.playAudio();
+        deviceMP4.playVideo();
+        
+        scanner.close();
+    }
+}
